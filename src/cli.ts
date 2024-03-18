@@ -31,7 +31,7 @@ export = function cli(): void {
 
   let shuttingDown = false;
 
-  commander
+  commander.createCommand()
     .version(getVersion())
     .option("-C, --color", "force color in logging", () => forceColourLogging = true)
     .option("-D, --debug", "turn on debug level logging", () => debugModeEnabled = true)
